@@ -126,3 +126,76 @@ When to Use What?
 ✅ Use setTimeout() when you want to delay execution once.
 ✅ Use setInterval() when you need repetitive execution.
 ✅ Use setImmediate() when you need to execute after I/O but before timers.
+
+
+
+Differences Between map(), filter(), and reduce() in JavaScript
+
+These three array methods are higher-order functions used for transforming, filtering, and aggregating data. Let's break them down with the best points and interview-friendly examples.
+
+
+map:
+
+1. map() → Transforms Each Element of the Array
+
+📌 Purpose:
+
+Creates a new array by applying a function to each element.
+
+Does not modify the original array.
+
+Best Points for Interviews:
+✔ Returns a new array (doesn’t modify the original).
+
+✔ Used for transformation (e.g., modify values, extract properties from objects).
+
+✔ Always returns an array of the same length as the original.
+
+When to Use?
+
+✅ When you need to transform each item in an array.
+
+
+filter-
+
+2. filter() → Filters Elements Based on a Condition
+📌 Purpose:
+
+Creates a new array with only elements that satisfy a condition.
+Removes elements that don’t pass the test.
+
+
+Best Points for Interviews:
+✔ Returns a new array (doesn’t modify the original).
+
+✔ Used for filtering data based on conditions.
+
+✔ The returned array may be smaller than the original.
+
+When to Use?
+✅ When you need to select specific elements from an array.
+
+
+reduce - 
+
+3. reduce() → Reduces the Array to a Single Value
+📌 Purpose:
+
+Reduces an array to a single value (sum, product, object, etc.).
+
+Requires a callback function with an accumulator.
+
+
+Best Points for Interviews:
+✔ Returns a single value (number, string, object, etc.).
+✔ Used for aggregation (sum, max, min, grouping, etc.).
+✔ Requires an initial value for the accumulator.
+
+When to Use?
+✅ When you need to aggregate array data into a single value.
+
+
+Final Summary
+map() → Modify each element.
+filter() → Remove unwanted elements.
+reduce() → Combine elements into a single value.
