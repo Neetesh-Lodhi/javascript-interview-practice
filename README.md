@@ -70,3 +70,59 @@ Code Reusability – Create specialized functions from a general function.
 Avoid Repetition – Helps when we need to partially apply functions.
 
 Improved Readability – Enhances clarity in function calls.
+
+
+setTimeout:
+
+1. setTimeout(callback, delay)
+
+Purpose: Executes the callback function once after the specified delay (in milliseconds).
+
+How It Works:
+It schedules the function execution after the given delay.
+
+The actual execution might be delayed due to the event loop and other queued tasks.
+
+Key Points:
+✔ Runs only once after delay.
+
+✔ Minimum delay is not guaranteed due to event loop behavior.
+
+
+setInterval:
+
+setInterval(callback, delay)
+
+Purpose: Executes the callback function repeatedly at fixed time intervals.
+
+How It Works:
+
+It repeatedly executes the callback every delay milliseconds.
+
+It keeps running until manually stopped using clearInterval(intervalID).
+
+Key Points:
+✔ Runs repeatedly after delay until clearInterval() is called.
+
+✔ Execution time may vary depending on other tasks in the event loop.
+
+setImmediate:
+3. setImmediate(callback) (Only in Node.js)
+
+Purpose: Executes the callback as soon as the current event loop iteration completes.
+
+How It Works:
+
+It schedules the callback after I/O operations but before setTimeout(0).
+
+It is executed in the check phase of the event loop.
+
+Key Points:
+✔ Executes before setTimeout(0), after I/O tasks.
+
+✔ Useful for deferring execution without waiting for a timeout.
+
+When to Use What?
+✅ Use setTimeout() when you want to delay execution once.
+✅ Use setInterval() when you need repetitive execution.
+✅ Use setImmediate() when you need to execute after I/O but before timers.

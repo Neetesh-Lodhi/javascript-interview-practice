@@ -5,7 +5,7 @@
 // let res = add(1,2,3)
 // console.log(res)
 
-//currying
+//currying-Breaking a function into multiple smaller functions, each taking one argument.
 
 function add(a) {
           return function (b) {
