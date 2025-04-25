@@ -1,0 +1,68 @@
+//var variable
+
+<script>
+  // var variable
+  function varFunction() {
+    if (true) {
+      var a = 10;
+    }
+    console.log(a);
+  }
+  varFunction();
+</script>
+
+
+<script>
+  //let variable
+  function letFunction() {
+    if (true) {
+      let b = 20;
+    }
+    
+    console.log(b); // ReferenceError: b is not defined
+  }
+  letFunction();
+</script>
+
+
+<script>
+  //const variable
+  const b = 30;
+
+  function constFunction() {
+    if (true) {
+      const c = 30;
+      // console.log(c); // 30
+    }
+    console.log(c); // ReferenceError: c is not defined
+  }
+  constFunction();
+</script>
+
+
+<script>
+  // var variable
+  function varFunction() {
+    if (true) {
+      var a = 10;
+      var a = 100; // redeclaring var variable-possible
+          
+          
+    }
+    console.log(a);
+  }
+  varFunction();
+</script>
+
+<script>
+  //let variable
+  function letFunction() {
+    if (true) {
+      let b = 20;
+ //let b = 100; // redeclaring let variable-not possible
+    }
+    
+    console.log(b); // ReferenceError: b is not defined
+  }
+  letFunction();
+</script>
