@@ -1,0 +1,31 @@
+<script>
+          //khud ke object me this keyword use kar sakte hai
+          //but if you want to access variable  of another object you cannot use (this keyword) 
+          //this refers to current object calling 
+          const person = {
+                    firstName:"Neetesh",
+                    lastName:"Lodhi",
+                    printName(){
+                                   console.log("i am "+ this.firstName + " i have a " + car.brand + " car");
+                    }
+          }
+
+          const car = {
+                    brand:"Tata",
+                    model:"Nexon"
+          }
+
+          person.printName();
+</script>
+
+
+
+
+<script>
+          //this keyword in function
+          //this refers to global object
+          function printName(){
+                    console.log(this);
+          }
+          printName();
+</script>
