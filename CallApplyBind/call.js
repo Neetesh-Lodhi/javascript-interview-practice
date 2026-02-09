@@ -1,3 +1,9 @@
+//call immediately, pass args normally.
+//Both call() and apply() are methods of JavaScript functions used to invoke a function immediately with a specific this context.
+// They help control the value of this when a function is called.
+//Used to borrow methods from one object and use them with another object.
+//This is known as Function Borrowing.
+
 const userDetails = {
           name: "Neetesh",
           age: 20,

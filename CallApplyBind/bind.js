@@ -1,4 +1,10 @@
 //in bind - we make copy of function and invoked later ,
+//“Unlike call and apply, which invoke the function immediately, 
+// bind returns a new function that can be called later with the bound context.”
+//“bind() is a method in JavaScript that creates a new function with a specific this context and optional pre-set arguments.
+// Unlike call or apply, it does not execute immediately.”
+//It does not call the function immediately.
+//Returns a new function.
 
 const userDetails1 = {
   name: "Neetesh",

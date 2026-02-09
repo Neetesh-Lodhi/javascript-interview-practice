@@ -44,3 +44,13 @@ let additition = (a, b) => {
 };
 
 
+//theory points for interview explanation
+//hoisting is a JavaScript mechanism where function declarations are moved to the top of their containing scope during the compile phase.
+//This means that you can call a function before it is declared in the code.
+//In the example below, the function `sum` is called before it is declared, but it still works because of hoisting.
+//However, this only works with function declarations, not with function expressions or arrow functions.
+//Function declarations are hoisted, but function expressions and arrow functions are not hoisted.
+
+
+
+
