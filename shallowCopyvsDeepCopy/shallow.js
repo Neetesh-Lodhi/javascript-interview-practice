@@ -32,3 +32,8 @@ firstPerson2.address.city = "Indore" //so changes reflect in both objects - not 
 console.log(firstPerson2) //so we go to deep copy 
 console.log(secondPerson2)
 
+
+//theory points for interview explanation
+//Shallow copy is a process of creating a new object and copying all the properties of the original object into the new object.
+
+
